@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/s_btn_blue"
+                android:onClick="doClick"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="返回"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/s_btn_blue"
+                android:onClick="doClick"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="保存"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/btn_delete"
+                android:background="@drawable/s_btn_blue"
+                android:onClick="doClick"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="编辑 "
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/share_tb_back"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" 
+            android:gravity="left|top"/>
+
+        <Button
+            android:id="@+id/btn_add_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/s_btn_blue"
+            android:onClick="doClick"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="增加声音"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout android:id="@+id/linear_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_play_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="doClick"
+                android:src="@drawable/tabbar_icon_activity_2x" />
+
+            <Button
+                android:id="@+id/btn_play_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/s_btn_blue"
+                android:onClick="doClick"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="播放"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" 
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add_img"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/s_btn_blue"
+            android:onClick="doClick"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="增加图片"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="doClick"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

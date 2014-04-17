@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+    
+    <ImageView android:id="@+id/record_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/home_searchbar_voice_pressed"
+        />
+    
+    <Button
+            android:id="@+id/record_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/s_btn_blue"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="录音"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" 
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/record_icon"
+            android:layout_marginTop="20dp"
+            />
+    
+
+</RelativeLayout>
